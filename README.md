@@ -1,26 +1,3 @@
-![Build Status](https://gitlab.com/pages/jekyll/badges/master/build.svg)
-![Jekyll Version](https://img.shields.io/gem/v/jekyll.svg)
-
----
-
-Example [Jekyll] website using GitLab Pages.
-
-Learn more about GitLab Pages at https://pages.gitlab.io and the official
-documentation http://doc.gitlab.com/ee/pages/README.html.
-
----
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [GitLab CI](#gitlab-ci)
-- [Building locally](#building-locally)
-- [GitLab User or Group Pages](#gitlab-user-or-group-pages)
-- [Did you fork this project?](#did-you-fork-this-project)
-- [Troubleshooting](#troubleshooting)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## GitLab CI
 
@@ -61,12 +38,6 @@ your `username` or `groupname`. This can be done by navigating to your
 project's **Settings**.
 
 Read more about [user/group Pages][userpages] and [project Pages][projpages].
-
-## Did you fork this project?
-
-If you forked this project for your own use, please go to your project's
-**Settings** and remove the forking relationship, which won't be necessary
-unless you want to contribute back to the upstream project.
 
 ## Troubleshooting
 
