@@ -1,18 +1,12 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 title: Derek W
 description: > # this means to ignore newlines until "baseurl:"
-  Records logs for the work of Derek Whatley 
+  Records logs for the work of Derek Whatley
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://derekwhatley.com" # the base hostname & protocol for your site
 github_username:  djwhatle
 
 # Build settings
 markdown: kramdown
+encoding: utf-8
 exclude: ["README.md"]
