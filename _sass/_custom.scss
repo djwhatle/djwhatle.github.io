@@ -13,3 +13,13 @@
 .site-footer {
   background-color: rgba(98, 127, 105, 0.5)
 }
+
+#icon-cube {
+  margin-left: 5px;
+
+  svg {
+    height: 30px;
+    width: 30px;
+    padding-bottom: 4px;
+  }
+}
