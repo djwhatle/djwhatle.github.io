@@ -11,7 +11,7 @@ My remote Atom workflow is built atop Unison. Unison can continuously scan local
 
 Once Unison is set up, you can run a sync job in the background that will bring your remote files to your local system and automatically sync changes back as your make them. You get the full speed of your favorite local editor and the convenience of working from anywhere.
 
-I set up a Unison sync job between the `development` folders on my work and home PC. Benefits of working on the local filesystem include. If you're not (yet) a full-time vim/emacs wizard and you need to work remotely on a large number of files, try out Unison!
+I set up a Unison sync job between project directories on my work and home PC. Working on the local filesystem in Atom means you can take full advantage of the project tree view, project search, and ctrl+p file switching.  If you're not (yet) a full-time vim/emacs wizard, and you need to work remotely on a large number of files, try out Unison!
 
 
 ## Before you Begin
@@ -50,6 +50,13 @@ While still in the `src` directory, copy the resulting files to somewhere on you
 
 ## Configuring Unison to Securely Sync Content
 
+#### Copy SSH Keys
+
+If you haven't already copied your SSH keys to the remote host, be sure to do so before continuing.
+
+`ssh-copy-id user@remote-host`
+
+
 #### Increase Filesystem Watcher Count
 
 If you're watching a directory containing lots of source code like I wanted to, the default `max_user_watches` value specified by `inotify` is unlikely to be sufficient. You will need to update the `max_user_watches` on each machine participating in the sync.
@@ -76,15 +83,11 @@ Create a .prf file in the `~/.unison` folder called `sample-sync.prf` containing
 
 I used something similar to the "Minimal Profile" from the Unison docs. One of my sync roots is configured as a local path, the other is configured as an SSH path into my remote machine.
 
-Unison can ignored paths based on the profile provided. For example, I didn't need to sync the assets from the remote host every time they were moved around during a build, so I ignored that path to skip unneccesary network traffic.
+Unison can ignore paths based on the profile provided. For example, I didn't need to sync the assets from the remote host every time they were moved around during a build, so I ignored that path to skip unneccesary network traffic.
 
-#### Copy SSH Keys
-
-If you haven't already copied your SSH keys to the remote host, be sure to do so before continuing.
-
-`ssh-copy-id user@remote-host`
 
 ## Run the Sync
+
 #### Start the Sync Job
 
 To run Unison using the profile we've just created, run:
